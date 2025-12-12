@@ -1,0 +1,74 @@
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\PAJV L3.exe.config
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\PAJV L3.exe
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\PAJV L3.pdb
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.csproj.AssemblyReference.cache
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\MainWindow.g.cs
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\App.g.cs
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3_MarkupCompile.cache
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3_MarkupCompile.lref
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\MainWindow.baml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.g.resources
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV_L3.Properties.Resources.resources
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.csproj.GenerateResource.cache
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.csproj.CoreCompileInputs.cache
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.exe
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.pdb
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.exe.config
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\RestSharp.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Buffers.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Memory.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Text.Json.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\RestSharp.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Buffers.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Memory.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Text.Json.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Alexco\Desktop\PAJV\L3 - WPF App\PAJV L3\PAJV L3\obj\Debug\PAJV L3.csproj.Up2Date
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\PAJV L3.exe.config
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\PAJV L3.exe
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\PAJV L3.pdb
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\RestSharp.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Buffers.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.IO.Pipelines.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Memory.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Numerics.Vectors.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Text.Encodings.Web.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Text.Json.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\RestSharp.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Buffers.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.IO.Pipelines.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Memory.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Numerics.Vectors.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Text.Encodings.Web.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Text.Json.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.csproj.AssemblyReference.cache
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.exe.config
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\MainWindow.g.cs
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\App.g.cs
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3_MarkupCompile.cache
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3_MarkupCompile.lref
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\MainWindow.baml
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.g.resources
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV_L3.Properties.Resources.resources
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.csproj.GenerateResource.cache
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.csproj.CoreCompileInputs.cache
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.csproj.Up2Date
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.exe
+D:\GMRV Activity\GMRV-Activity\YEAR 1\SEM 1\PAJV\L3\L3 WPF\PAJV L3\obj\Debug\PAJV L3.pdb

@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GMRV Activity\\GMRV-Activity\\YEAR 1\\SEM 1\\PAJV\\L3\\L3 WPF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1042BEE5-4FAC-40C0-9C45-DF8378749271}|PAJV L3\\PAJV L3.csproj|d:\\gmrv activity\\gmrv-activity\\year 1\\sem 1\\pajv\\l3\\l3 wpf\\pajv l3\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1042BEE5-4FAC-40C0-9C45-DF8378749271}|PAJV L3\\PAJV L3.csproj|solutionrelative:pajv l3\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1042BEE5-4FAC-40C0-9C45-DF8378749271}|PAJV L3\\PAJV L3.csproj|D:\\GMRV Activity\\GMRV-Activity\\YEAR 1\\SEM 1\\PAJV\\L3\\L3 WPF\\pajv l3\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1042BEE5-4FAC-40C0-9C45-DF8378749271}|PAJV L3\\PAJV L3.csproj|solutionrelative:pajv l3\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GMRV Activity\\GMRV-Activity\\YEAR 1\\SEM 1\\PAJV\\L3\\L3 WPF\\PAJV L3\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PAJV L3\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\GMRV Activity\\GMRV-Activity\\YEAR 1\\SEM 1\\PAJV\\L3\\L3 WPF\\PAJV L3\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PAJV L3\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:36:32.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\GMRV Activity\\GMRV-Activity\\YEAR 1\\SEM 1\\PAJV\\L3\\L3 WPF\\PAJV L3\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PAJV L3\\MainWindow.xaml",
+              "ToolTip": "D:\\GMRV Activity\\GMRV-Activity\\YEAR 1\\SEM 1\\PAJV\\L3\\L3 WPF\\PAJV L3\\MainWindow.xaml",
+              "RelativeToolTip": "PAJV L3\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-06T11:36:33.106Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
