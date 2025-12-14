@@ -1,0 +1,2 @@
+IRVA_AR/Assets/Plugins/Android/libmanomotion.so filter=lfs diff=lfs merge=lfs -text
+IRVA_AR/Assets/Plugins/iOS/libManomotion.framework/libManomotion filter=lfs diff=lfs merge=lfs -text
