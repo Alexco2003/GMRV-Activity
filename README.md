@@ -14,7 +14,7 @@ The content is organized chronologically by academic year and semester:
 
 * **[YEAR 1](./YEAR%201)**
     * **[SEM 1](./YEAR%201/SEM%201)**
-    * **SEM 2** *(Coming soon)*
+    * **[SEM 2](./YEAR%201/SEM%202)**
 * **YEAR 2**
     * **SEM 1**
     * **SEM 2**
@@ -30,4 +30,4 @@ The content is organized chronologically by academic year and semester:
 > Large-scale projects are hosted in their own **dedicated repositories** on my profile to maintain clean version control and documentation.
 
 ---
-© 2026 Codarcea Alexandru-Christian
+© 2025 - Present Codarcea Alexandru-Christian
