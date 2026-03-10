@@ -7,6 +7,7 @@ It is currently used as teaching and study material for a number of courses of i
 
 -   **`EGC`** Elements of Computer Graphics, BSc year 3 &mdash; [course materials (RO)](https://ocw.cs.pub.ro/courses/egc)
 -   **`SPG`** Graphics Processing Systems, BSc year 4 &mdash; [course materials (RO)](https://ocw.cs.pub.ro/courses/spg)
+-   **`IPG`** Introduction to Graphics Programming, MSc year 1 &mdash; [course materials (RO)](https://ocw.cs.pub.ro/courses/ipg)
 
 The functionality is split into several modules of increasing difficulty (`m1`, `m2`, etc.).
 
