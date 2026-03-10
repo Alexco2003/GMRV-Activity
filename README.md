@@ -30,4 +30,4 @@ The content is organized chronologically by academic year and semester:
 > Large-scale projects are hosted in their own **dedicated repositories** on my profile to maintain clean version control and documentation.
 
 ---
-© 2025 - Present Codarcea Alexandru-Christian
+© 2025 - Present, Codarcea Alexandru-Christian
