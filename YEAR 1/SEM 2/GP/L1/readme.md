@@ -1,1 +1,0 @@
-https://ocw.cs.pub.ro/courses/gp/laboratoare/01
