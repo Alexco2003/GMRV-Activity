@@ -1,10 +1,12 @@
 import turtle
+from PIL import ImageGrab
+import os
 
 def apply_rules(cmd):
     if cmd == 'F':
         return 'FF'
     elif cmd == 'X':
-        return 'F-[[X]+X]+F[+FX]-X'
+        return 'F[+X]F[-X]+X'
 
     return cmd
 
@@ -59,13 +61,29 @@ def main():
     t.pendown()
 
     # L-systems parameters
-    iterations = 5
-    angle = 22.5
-    distance = 5
+    iterations = 7
+    angle = 20
+    distance = 3
     axiom = 'X'
     l_system_string = create_l_system(iterations, axiom)
 
     draw_l_system(l_system_string, t, distance, angle)
+
+
+    folder = "images"
+
+    canvas = wn.getcanvas()
+    x = canvas.winfo_rootx()
+    y = canvas.winfo_rooty()
+    width = canvas.winfo_width()
+    height = canvas.winfo_height()
+
+    img = ImageGrab.grab(bbox=(x, y, x + width, y + height))
+
+    path = os.path.join(folder, "ex1_d.png")
+
+    img.save(path)
+
 
     # wn.update()
     # Wait for user to close window
