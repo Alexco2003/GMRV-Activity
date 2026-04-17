@@ -3,6 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public class NPCData
 {
+    public int id;
     public string npcName;
     public NPCClass npcClass;
     public NPCPersonality personality;

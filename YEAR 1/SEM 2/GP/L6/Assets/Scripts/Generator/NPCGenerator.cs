@@ -4,9 +4,23 @@ using UnityEngine;
 public class NPCGenerator : MonoBehaviour
 {
     [Header("Generator Configuration")]
-    public List<string> firstNames = new List<string> { "Kael", "Lyra", "Grom", "Sylas", "Elara", "Thorin" };
-    public List<string> lastNames = new List<string> { "Shadow", "Whisper", "Iron", "Sunwalker", "Blood", "Stone" };
+    public List<string> firstNames = new List<string>
+    {
+        "Kael", "Lyra", "Grom", "Sylas", "Elara", "Thorin",
+        "Aria", "Fenrir", "Darius", "Evelynn", "Jace", "Vex",
+        "Seraphine", "Rengar", "Talon", "Morgana", "Garen", "Lux",
+        "Ezio", "Aloy", "Geralt", "Ciri", "Arthas", "Jaina"
+    };
 
+    public List<string> lastNames = new List<string>
+    {
+        "Shadow", "Whisper", "Iron", "Sunwalker", "Blood", "Stone",
+        "Storm", "Lightbringer", "Windrunner", "Hellscream", "Proudmoore",
+        "Swift", "Darkblade", "Moon", "Stargazer", "Fireforge", "Frost",
+        "Steelskin", "Silvertongue", "Gloom", "Dawn", "Duskrider"
+    };
+
+    private static int nextNpcId = 1;
     public void OnGenerateNPCButtonClicked()
     {
         NPCData newNPC = GenerateRandomNPC();
@@ -15,6 +29,9 @@ public class NPCGenerator : MonoBehaviour
     public NPCData GenerateRandomNPC()
     {
         NPCData newNPC = new NPCData();
+
+        newNPC.id = nextNpcId;
+        nextNpcId++;
 
         string randomFirstName = firstNames[Random.Range(0, firstNames.Count)];
         string randomLastName = lastNames[Random.Range(0, lastNames.Count)];
@@ -29,11 +46,10 @@ public class NPCGenerator : MonoBehaviour
 
         ApplyPersonalityModifiers(newNPC);
 
-        Debug.Log($"Generated: {newNPC.npcName} | {newNPC.npcClass} | {newNPC.personality} | HP: {newNPC.hp:F1} | Dmg: {newNPC.damage:F1} | Armor: {newNPC.armor:F1}");
+        Debug.Log($"Generated NPC [ID: {newNPC.id}]: {newNPC.npcName} | {newNPC.npcClass} | {newNPC.personality} | HP: {newNPC.hp:F1} | Dmg: {newNPC.damage:F1} | Armor: {newNPC.armor:F1}");
 
         return newNPC;
     }
-
 
     private NPCClass GetWeightedRandomClass()
     {
