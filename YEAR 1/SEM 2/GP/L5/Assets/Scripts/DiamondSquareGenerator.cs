@@ -9,7 +9,7 @@ public class DiamondSquareGenerator : MonoBehaviour
 
     [Header("Terrain Settings")]
     public float meshScale = 1f;
-    public float heightMultiplier = 15f;
+    public float heightMultiplier = 5f;
 
     [Header("Diamond Square Settings")]
     public float initialRandomRange = 5f;

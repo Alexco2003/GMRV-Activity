@@ -480,7 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DiamondSquareGenerator
   n: 7
   meshScale: 1
-  heightMultiplier: 15
+  heightMultiplier: 5
   initialRandomRange: 5
   roughness: 0.5
 --- !u!23 &1217624780
