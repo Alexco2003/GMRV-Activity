@@ -46,7 +46,7 @@ public class NPCGenerator : MonoBehaviour
 
         ApplyPersonalityModifiers(newNPC);
 
-        Debug.Log($"Generated NPC [ID: {newNPC.id}]: {newNPC.npcName} | {newNPC.npcClass} | {newNPC.personality} | HP: {newNPC.hp:F1} | Dmg: {newNPC.damage:F1} | Armor: {newNPC.armor:F1}");
+        Debug.Log($"Generated [ID: {newNPC.id}]: {newNPC.npcName} | {newNPC.npcClass} | {newNPC.personality} | HP: {newNPC.hp} | Dmg: {newNPC.damage} | Armor: {newNPC.armor}");
 
         return newNPC;
     }
@@ -82,32 +82,31 @@ public class NPCGenerator : MonoBehaviour
         switch (npc.npcClass)
         {
             case NPCClass.Warrior:
-                npc.hp = Random.Range(80f, 120f);
-                npc.damage = Random.Range(15f, 25f);
-                npc.armor = Random.Range(10f, 20f);
+                npc.hp = Mathf.RoundToInt(Random.Range(80f, 120f));
+                npc.damage = Mathf.RoundToInt(Random.Range(15f, 25f));
+                npc.armor = Mathf.RoundToInt(Random.Range(10f, 20f));
                 break;
             case NPCClass.Mage:
-                npc.hp = Random.Range(40f, 65f);
-                npc.damage = Random.Range(30f, 50f);
-                npc.armor = Random.Range(2f, 5f);
+                npc.hp = Mathf.RoundToInt(Random.Range(40f, 65f));
+                npc.damage = Mathf.RoundToInt(Random.Range(30f, 50f));
+                npc.armor = Mathf.RoundToInt(Random.Range(2f, 5f));
                 break;
             case NPCClass.Rogue:
-                npc.hp = Random.Range(55f, 80f);
-                npc.damage = Random.Range(20f, 35f);
-                npc.armor = Random.Range(5f, 10f);
+                npc.hp = Mathf.RoundToInt(Random.Range(55f, 80f));
+                npc.damage = Mathf.RoundToInt(Random.Range(20f, 35f));
+                npc.armor = Mathf.RoundToInt(Random.Range(5f, 10f));
                 break;
             case NPCClass.Archer:
-                npc.hp = Random.Range(60f, 85f);
-                npc.damage = Random.Range(18f, 30f);
-                npc.armor = Random.Range(4f, 8f);
+                npc.hp = Mathf.RoundToInt(Random.Range(60f, 85f));
+                npc.damage = Mathf.RoundToInt(Random.Range(18f, 30f));
+                npc.armor = Mathf.RoundToInt(Random.Range(4f, 8f));
                 break;
             case NPCClass.Paladin:
-                npc.hp = Random.Range(90f, 130f);
-                npc.damage = Random.Range(12f, 20f);
-                npc.armor = Random.Range(15f, 25f);
+                npc.hp = Mathf.RoundToInt(Random.Range(90f, 130f));
+                npc.damage = Mathf.RoundToInt(Random.Range(12f, 20f));
+                npc.armor = Mathf.RoundToInt(Random.Range(15f, 25f));
                 break;
         }
-
         npc.maxHp = npc.hp;
     }
 
@@ -116,24 +115,24 @@ public class NPCGenerator : MonoBehaviour
         switch (npc.personality)
         {
             case NPCPersonality.Aggressive:
-                npc.damage *= 1.3f;
-                npc.hp *= 0.9f;
+                npc.damage = Mathf.RoundToInt(npc.damage * 1.3f);
+                npc.hp = Mathf.RoundToInt(npc.hp * 0.9f);
                 break;
             case NPCPersonality.Coward:
-                npc.hp *= 0.8f;
-                npc.armor *= 0.7f;
+                npc.hp = Mathf.RoundToInt(npc.hp * 0.8f);
+                npc.armor = Mathf.RoundToInt(npc.armor * 0.7f);
                 break;
             case NPCPersonality.Brave:
-                npc.hp *= 1.1f;
-                npc.damage *= 1.1f;
+                npc.hp = Mathf.RoundToInt(npc.hp * 1.1f);
+                npc.damage = Mathf.RoundToInt(npc.damage * 1.1f);
                 break;
             case NPCPersonality.Cunning:
-                npc.damage *= 1.2f;
-                npc.armor *= 1.1f;
+                npc.damage = Mathf.RoundToInt(npc.damage * 1.2f);
+                npc.armor = Mathf.RoundToInt(npc.armor * 1.1f);
                 break;
             case NPCPersonality.Peaceful:
-                npc.hp *= 1.15f;
-                npc.damage *= 0.7f;
+                npc.hp = Mathf.RoundToInt(npc.hp * 1.15f);
+                npc.damage = Mathf.RoundToInt(npc.damage * 0.7f);
                 break;
         }
     }

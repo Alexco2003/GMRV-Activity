@@ -41,7 +41,7 @@ public class ItemGenerator : MonoBehaviour
         string abilityLog = newItem.primaryAbility != null ? $" | Ability 1: {newItem.primaryAbility.type}: {newItem.primaryAbility.description}" : "";
         abilityLog += newItem.secondaryAbility != null ? $" | Ability 2: {newItem.secondaryAbility.type}: {newItem.secondaryAbility.description}" : "";
 
-        Debug.Log($"Generated Item: {newItem.itemName} [{newItem.rarity}] | Dmg: {newItem.damage:F1} | Dur: {newItem.durability:F1}{abilityLog}");
+        Debug.Log($"Generated Item: {newItem.itemName} [{newItem.rarity}] | Dmg: {newItem.damage} | Dur: {newItem.durability}{abilityLog}");
         return newItem;
     }
 
@@ -73,9 +73,9 @@ public class ItemGenerator : MonoBehaviour
         float totalBudget = baseBudget * multiplier;
 
         float damagePercentage = Random.Range(0.4f, 0.7f);
-        item.damage = totalBudget * damagePercentage;
 
-        item.durability = totalBudget - item.damage;
+        item.damage = Mathf.RoundToInt(totalBudget * damagePercentage);
+        item.durability = Mathf.RoundToInt(totalBudget - item.damage);
     }
 
     private void AssignSpecialAbilities(ItemData item)
@@ -113,32 +113,32 @@ public class ItemGenerator : MonoBehaviour
         switch (type)
         {
             case SpecialAbilityType.Poison:
-                newAbility.value1 = Random.Range(3f, 8f);
+                newAbility.value1 = Mathf.RoundToInt(Random.Range(3f, 8f));
                 newAbility.value2 = Random.Range(3, 6);
-                newAbility.description = $"{newAbility.value1:F1} dmg/tick for {newAbility.value2} ticks";
+                newAbility.description = $"{newAbility.value1} dmg/tick for {newAbility.value2} ticks";
                 break;
 
             case SpecialAbilityType.Lifesteal:
-                newAbility.value1 = Random.Range(15f, 30f);
-                newAbility.description = $"Heals {newAbility.value1:F1}% of damage dealt";
+                newAbility.value1 = Mathf.RoundToInt(Random.Range(15f, 30f));
+                newAbility.description = $"Heals {newAbility.value1}% of damage dealt";
                 break;
 
             case SpecialAbilityType.FireDamage:
-                newAbility.value1 = Random.Range(5f, 15f);
+                newAbility.value1 = Mathf.RoundToInt(Random.Range(5f, 15f));
                 newAbility.value2 = 2f;
-                newAbility.description = $"+{newAbility.value1:F1} dmg & burns for {newAbility.value2} ticks";
+                newAbility.description = $"+{newAbility.value1} dmg & burns for {newAbility.value2} ticks";
                 break;
 
             case SpecialAbilityType.IceSlow:
-                newAbility.value1 = Random.Range(20f, 50f);
-                newAbility.value2 = Random.Range(2f, 4f);
-                newAbility.description = $"Reduces target speed by {newAbility.value1:F1}% for {newAbility.value2:F1}s";
+                newAbility.value1 = Mathf.RoundToInt(Random.Range(20f, 50f));
+                newAbility.value2 = Mathf.RoundToInt(Random.Range(2f, 4f));
+                newAbility.description = $"Reduces target speed by {newAbility.value1}% for {newAbility.value2}s";
                 break;
 
             case SpecialAbilityType.Thunder:
-                newAbility.value1 = Random.Range(15f, 35f);
+                newAbility.value1 = Mathf.RoundToInt(Random.Range(15f, 35f));
                 newAbility.value2 = 1f;
-                newAbility.description = $"{newAbility.value1:F1}% chance to stun for {newAbility.value2}s";
+                newAbility.description = $"{newAbility.value1}% chance to stun for {newAbility.value2}s";
                 break;
         }
 
