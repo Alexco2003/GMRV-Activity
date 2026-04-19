@@ -6,6 +6,7 @@ public class WorldSimulator : MonoBehaviour
 {
     [Header("Dependencies")]
     public NPCGenerator npcGenerator;
+    public ItemGenerator itemGenerator;
 
     private RelationshipSystem relationshipSystem;
     private NarrativeJournal journal;
@@ -35,6 +36,12 @@ public class WorldSimulator : MonoBehaviour
 
             int locationCount = System.Enum.GetValues(typeof(LocationType)).Length;
             newData.currentLocation = (LocationType)Random.Range(0, locationCount);
+
+            int startingItems = Random.Range(0, 10);
+            for (int j = 0; j < startingItems; j++)
+            {
+                newData.inventory.Add(itemGenerator.GenerateRandomItem());
+            }
 
             activeAgents.Add(new NPCAgent(newData));
         }

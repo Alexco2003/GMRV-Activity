@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -15,6 +16,8 @@ public class NPCData
 
     public LocationType currentLocation;
     public bool isDead = false;
+
+    public List<ItemData> inventory = new List<ItemData>();
 
     public NPCData() { }
 }

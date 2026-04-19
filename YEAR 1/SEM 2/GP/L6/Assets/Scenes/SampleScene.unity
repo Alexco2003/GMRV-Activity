@@ -1235,6 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorldSimulator
   npcGenerator: {fileID: 1252502678}
+  itemGenerator: {fileID: 1252502677}
 --- !u!1 &1502766934
 GameObject:
   m_ObjectHideFlags: 0

@@ -79,17 +79,21 @@ public class NPCAgent
 
         List<NPCAgent> allies = neighbors.Where(n => relSys.GetRelationship(Data.id, n.Data.id) > 10f).ToList();
 
-        if (allies.Count > 0)
+        if (allies.Count > 0 && Data.inventory.Count > 0)
         {
             float tradeChance = 0.25f + tradeBonus;
             if (Random.value <= tradeChance)
             {
                 NPCAgent tradePartner = allies[Random.Range(0, allies.Count)];
 
+                ItemData itemToGive = Data.inventory[0];
+                Data.inventory.RemoveAt(0);
+                tradePartner.Data.inventory.Add(itemToGive);
+
                 relSys.ModifyRelationship(Data.id, tradePartner.Data.id, 10f);
                 relSys.ModifyRelationship(tradePartner.Data.id, Data.id, 10f);
 
-                return journal.GenerateLog(currentDay, ActionType.Trade, Data, tradePartner.Data);
+                return journal.GenerateLog(currentDay, ActionType.Trade, Data, tradePartner.Data, 0f, itemToGive.itemName);
             }
         }
 

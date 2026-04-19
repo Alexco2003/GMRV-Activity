@@ -20,12 +20,12 @@ public class NarrativeJournal
 
     private List<string> tradeTemplates = new List<string>
     {
-        "{attacker} friendly shared an item with {target} at the {loc}.",
-        "A peaceful trade occurred in the {loc} between {attacker} and {target}.",
-        "{attacker} and {target} exchanged goods in the {loc}, strengthening their bond."
+        "{attacker} generously gifted a [{item}] to {target} at the {loc}.",
+        "A peaceful trade occurred in the {loc}: {attacker} gave {target} a [{item}].",
+        "{attacker} and {target} strengthened their bond in the {loc} by exchanging a [{item}]."
     };
 
-    public string GenerateLog(int day, ActionType action, NPCData actor, NPCData target = null, float value = 0f)
+    public string GenerateLog(int day, ActionType action, NPCData actor, NPCData target = null, float value = 0f, string itemName = "")
     {
         string template = "";
 
@@ -59,6 +59,8 @@ public class NarrativeJournal
 
         if (action == ActionType.Attack) log = log.Replace("{dmg}", Mathf.RoundToInt(value).ToString());
         if (action == ActionType.Survive) log = log.Replace("{hp}", Mathf.RoundToInt((actor.hp / actor.maxHp) * 100f).ToString());
+
+        if (action == ActionType.Trade && !string.IsNullOrEmpty(itemName)) log = log.Replace("{item}", itemName);
 
         return $"[Day {day}] {log}";
     }
