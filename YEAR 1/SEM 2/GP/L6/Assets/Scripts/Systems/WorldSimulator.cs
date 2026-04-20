@@ -16,12 +16,42 @@ public class WorldSimulator : MonoBehaviour
     private const int MAX_DAYS = 20;
     private bool simulationEnded = false;
 
-    void Start()
-    {
-        InitializeWorld();
-    }
+    public bool isSimulationRunning { get; private set; } = false;
 
-    private void InitializeWorld()
+    //void Start()
+    //{
+    //    InitializeWorld();
+    //}
+
+    //private void InitializeWorld()
+    //{
+    //    relationshipSystem = new RelationshipSystem();
+    //    journal = new NarrativeJournal();
+    //    activeAgents.Clear();
+    //    currentDay = 0;
+    //    simulationEnded = false;
+
+    //    int npcCount = Random.Range(4, 7);
+    //    for (int i = 0; i < npcCount; i++)
+    //    {
+    //        NPCData newData = npcGenerator.GenerateRandomNPC();
+
+    //        int locationCount = System.Enum.GetValues(typeof(LocationType)).Length;
+    //        newData.currentLocation = (LocationType)Random.Range(0, locationCount);
+
+    //        int startingItems = Random.Range(0, 10);
+    //        for (int j = 0; j < startingItems; j++)
+    //        {
+    //            newData.inventory.Add(itemGenerator.GenerateRandomItem());
+    //        }
+
+    //        activeAgents.Add(new NPCAgent(newData));
+    //    }
+
+    //    Debug.Log($"--- WORLD INITIALIZED WITH {npcCount} NPCs ---");
+    //}
+
+    public void StartSimulationWithData(List<NPCData> importedNPCs)
     {
         relationshipSystem = new RelationshipSystem();
         journal = new NarrativeJournal();
@@ -29,28 +59,31 @@ public class WorldSimulator : MonoBehaviour
         currentDay = 0;
         simulationEnded = false;
 
-        int npcCount = Random.Range(4, 7);
-        for (int i = 0; i < npcCount; i++)
+        isSimulationRunning = true;
+
+        foreach (NPCData data in importedNPCs)
         {
-            NPCData newData = npcGenerator.GenerateRandomNPC();
+            data.isDead = false;
+            data.hp = data.maxHp;
 
             int locationCount = System.Enum.GetValues(typeof(LocationType)).Length;
-            newData.currentLocation = (LocationType)Random.Range(0, locationCount);
+            data.currentLocation = (LocationType)Random.Range(0, locationCount);
 
-            int startingItems = Random.Range(0, 10);
-            for (int j = 0; j < startingItems; j++)
-            {
-                newData.inventory.Add(itemGenerator.GenerateRandomItem());
-            }
-
-            activeAgents.Add(new NPCAgent(newData));
+            activeAgents.Add(new NPCAgent(data));
         }
 
-        Debug.Log($"--- WORLD INITIALIZED WITH {npcCount} NPCs ---");
+        Debug.Log($"--- ARENA PREPARED WITH {activeAgents.Count} COMBATANTS! ---");
+        Debug.Log("Press [Advance Day] to advance time.");
     }
 
     public void OnAdvanceDayClicked()
     {
+        if (!isSimulationRunning)
+        {
+            Debug.LogWarning("Simulation has not started yet! Please click 'Start Simulation' first.");
+            return;
+        }
+
         if (simulationEnded)
         {
             Debug.LogWarning("The simulation has already ended. Please restart to play again.");
@@ -86,6 +119,7 @@ public class WorldSimulator : MonoBehaviour
         if (aliveCount <= 1 || currentDay >= MAX_DAYS)
         {
             simulationEnded = true;
+            isSimulationRunning = false;
             GenerateSummary(aliveCount);
         }
     }
