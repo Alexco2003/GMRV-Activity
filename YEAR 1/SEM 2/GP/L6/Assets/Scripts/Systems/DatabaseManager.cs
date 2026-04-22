@@ -6,6 +6,7 @@ public class DatabaseManager : MonoBehaviour
     [Header("Dependencies")]
     public SaveManager saveManager;
     public NPCGenerator npcGenerator;
+    public ItemGenerator itemGenerator;
 
     public WorldSimulator worldSimulator;
 
@@ -30,7 +31,18 @@ public class DatabaseManager : MonoBehaviour
         int npcCount = Random.Range(4, 7);
         for (int i = 0; i < npcCount; i++)
         {
-            masterNpcList.Add(npcGenerator.GenerateRandomNPC());
+            NPCData newNpc = npcGenerator.GenerateRandomNPC();
+
+            int startingItems = Random.Range(0, 10);
+            for (int j = 0; j < startingItems; j++)
+            {
+                ItemData newItem = itemGenerator.GenerateRandomItem();
+                newNpc.inventory.Add(newItem);
+
+                masterItemList.Add(newItem);
+            }
+
+            masterNpcList.Add(newNpc);
         }
 
         saveManager.SaveGame(masterNpcList, masterItemList);
@@ -106,5 +118,23 @@ public class DatabaseManager : MonoBehaviour
         isDataReadyInRAM = false;
 
         Debug.Log("Database wiped clean from RAM and Disk! You can now test a fresh start.");
+    }
+
+
+
+    public bool IsDataReady()
+    {
+        return isDataReadyInRAM;
+    }
+
+    public List<NPCData> GetMasterNpcList()
+    {
+        return masterNpcList;
+    }
+
+    public void ForceSave()
+    {
+        saveManager.SaveGame(masterNpcList, masterItemList);
+        Debug.Log("Auto-saved changes from UI.");
     }
 }
