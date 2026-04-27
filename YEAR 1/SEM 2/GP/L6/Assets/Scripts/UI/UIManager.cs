@@ -5,10 +5,12 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public DatabaseManager dbManager;
+    public WorldSimulator worldSimulator;
 
     [Header("UI Panels")]
     public GameObject mainMenuPanel;
     public GameObject databasePanel;
+    public GameObject simulationPanel;
 
     [Header("Scroll View Setup")]
     public Transform contentContainer;
@@ -51,5 +53,21 @@ public class UIManager : MonoBehaviour
             NPCUICard cardScript = card.GetComponent<NPCUICard>();
             cardScript.Setup(npc, dbManager);
         }
+    }
+
+    public void OnStartSimulationClicked()
+    {
+        if (!dbManager.IsDataReady())
+        {
+            Debug.LogWarning("ERROR: No data generated! Please generate NPCs first.");
+            return;
+        }
+
+        mainMenuPanel.SetActive(false);
+        simulationPanel.SetActive(true);
+
+        List<NPCData> npcs = dbManager.GetMasterNpcList();
+
+        worldSimulator.StartSimulationWithData(npcs);
     }
 }
