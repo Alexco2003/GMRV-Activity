@@ -15,6 +15,7 @@ public class WorldSimulator : MonoBehaviour
     public ScrollRect logScrollRect;
     public GameObject npcDotPrefab;
     public Transform[] locationZones;
+    public TextMeshProUGUI advanceDayButtonText;
 
     private RelationshipSystem relationshipSystem;
     private NarrativeJournal journal;
@@ -72,6 +73,9 @@ public class WorldSimulator : MonoBehaviour
         if (simulationLogText != null)
             simulationLogText.text = "<b>--- SIMULATION INITIALIZED ---</b>\n";
 
+        if (advanceDayButtonText != null)
+            advanceDayButtonText.text = "Advance Day";
+
         foreach (NPCData data in importedNPCs)
         {
             data.isDead = false;
@@ -92,15 +96,22 @@ public class WorldSimulator : MonoBehaviour
 
     public void OnAdvanceDayClicked()
     {
-        if (!isSimulationRunning)
-        {
-            Debug.LogWarning("Simulation has not started yet! Please click 'Start Simulation' first.");
-            return;
-        }
 
         if (simulationEnded)
         {
-            Debug.LogWarning("The simulation has already ended. Please restart to play again.");
+            Debug.Log("Exiting Application...");
+
+            Application.Quit();
+
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
+            return;
+        }
+
+        if (!isSimulationRunning)
+        {
+            Debug.LogWarning("Simulation has not started yet! Please click 'Start Simulation' first.");
             return;
         }
 
@@ -220,6 +231,11 @@ public class WorldSimulator : MonoBehaviour
             simulationEnded = true;
             isSimulationRunning = false;
             GenerateSummary(aliveCount);
+
+            if (advanceDayButtonText != null)
+            {
+                advanceDayButtonText.text = "Quit";
+            }
         }
     }
 
