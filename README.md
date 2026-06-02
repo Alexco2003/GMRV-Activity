@@ -7,7 +7,7 @@
 
 ## 📖 About This Repository
 
-This repository serves as a centralized archive for my daily academic activity during my Master's degree. Here you will find smaller assignments, laboratory work, course presentations, and miscellaneous experiments that do not require a dedicated repository.
+This repository serves as a centralized archive for my daily academic activity during my Master's degree. Here you will find smaller assignments, laboratory work, course presentations, study resources and miscellaneous experiments that do not require a dedicated repository.
 
 ### 📂 Repository Structure
 The content is organized chronologically by academic year and semester:
@@ -24,6 +24,7 @@ The content is organized chronologically by academic year and semester:
 * 🧪 **Lab Assignments:** Code snippets and solutions for weekly laboratory tasks.
 * 📄 **Presentations:** Slides and research materials for various courses.
 * 🔧 **Miscellaneous:** Small prototypes, experiments, and exams.
+* 📚 **Course & Lab Theory:** Theoretical notes, documentation, and study resources for courses and labs.
 
 > [!IMPORTANT]
 > **Looking for major projects?**
